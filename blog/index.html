@@ -12,87 +12,33 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1f3db;</text></svg>">
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{colors:{cream:'#FAFAF8',sand:'#F2F0ED',charcoal:'#1A1A1A',warm:'#6B6560',gold:'#C9A96E','gold-dark':'#A8864D',border:'#E5E2DE',dark:'#2A2725',light:'#F5F3F0'},fontFamily:{serif:['Playfair Display','Georgia','serif'],sans:['Inter','Arial','sans-serif']}}}}</script>
+  <style>body{-webkit-font-smoothing:antialiased}.hero-overlay{background:linear-gradient(135deg,rgba(26,26,26,.7) 0%,rgba(42,39,37,.5) 100%)}.nav-open{display:flex!important}</style>
+
 </head>
-<body>
+<body class="font-sans text-charcoal bg-cream leading-relaxed">
+<header class="sticky top-0 z-50 bg-cream/97 backdrop-blur-md border-b border-border"><div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4"><a href="/" class="font-serif text-xl font-bold text-charcoal">Heritage <span class="text-gold">Vestiaire</span></a><nav class="hidden md:flex items-center gap-8" id="nav"><a href="/services.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">Services</a><a href="/comment-ca-marche.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">Comment ca marche</a><a href="/a-propos.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">A propos</a><a href="/blog/" class="text-charcoal text-sm font-medium">Blog</a><a href="/faq.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">FAQ</a><a href="/contact.html" class="bg-gold text-white px-5 py-2.5 rounded-md font-semibold text-sm hover:bg-gold-dark transition-all hover:-translate-y-0.5 hover:shadow-lg">Estimation gratuite</a></nav><button class="md:hidden p-2" onclick="document.getElementById('nav').classList.toggle('nav-open');document.getElementById('nav').classList.toggle('flex-col');document.getElementById('nav').classList.toggle('absolute');document.getElementById('nav').classList.toggle('top-full');document.getElementById('nav').classList.toggle('left-0');document.getElementById('nav').classList.toggle('right-0');document.getElementById('nav').classList.toggle('bg-cream');document.getElementById('nav').classList.toggle('p-6');document.getElementById('nav').classList.toggle('border-b');document.getElementById('nav').classList.toggle('border-border');" aria-label="Menu"><div class="w-6 h-0.5 bg-charcoal mb-1.5"></div><div class="w-6 h-0.5 bg-charcoal mb-1.5"></div><div class="w-6 h-0.5 bg-charcoal"></div></button></div></header>
+<section class="relative py-24 md:py-32"><img src="../assets/images/vintage-clothing.jpg" alt="Guides et ressources" class="absolute inset-0 w-full h-full object-cover"><div class="hero-overlay absolute inset-0"></div><div class="relative z-10 max-w-6xl mx-auto px-6"><div class="text-sm text-gray-300 mb-4"><a href="/" class="hover:text-gold transition-colors">Accueil</a> <span class="mx-2">/</span> Blog</div><h1 class="font-serif text-4xl md:text-5xl font-bold text-white leading-tight mb-6">Guides et ressources</h1><p class="text-lg text-gray-300 max-w-2xl leading-relaxed">Guides pratiques, conseils et ressources pour gerer les vetements lors d'une succession au Quebec.</p></div></section><section class="py-20"><div class="max-w-6xl mx-auto px-6"><div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white border border-border rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all">
+<img src="../assets/images/folded-clothes.jpg" alt="Vetements plies" class="w-full h-48 object-cover">
+<div class="p-6"><span class="inline-block text-xs font-semibold uppercase tracking-wider text-gold mb-3">Guide complet</span><h3 class="font-semibold text-lg mb-2"><a href="/blog/article-1.html" class="text-charcoal hover:text-gold transition-colors">Que faire avec les vetements d'un proche decede?</a></h3><p class="text-warm text-sm mb-3">Guide pratique et humain pour gerer la garde-robe d'un proche disparu au Quebec.</p><a href="/blog/article-1.html" class="text-gold font-semibold text-sm hover:text-gold-dark">Lire l'article &rarr;</a></div></div>
 
-  <header class="header">
-    <div class="header-inner">
-      <a href="/" class="logo">Heritage <span>Vestiaire</span></a>
-      <nav class="nav">
-        <a href="/services.html">Services</a>
-        <a href="/comment-ca-marche.html">Comment ca marche</a>
-        <a href="/a-propos.html">A propos</a>
-        <a href="/blog/" class="active">Blog</a>
-        <a href="/faq.html">FAQ</a>
-        <a href="/contact.html" class="btn btn-primary">Estimation gratuite</a>
-      </nav>
-      <button class="mobile-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+<div class="bg-white border border-border rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all">
+<img src="../assets/images/sorting-clothes.jpg" alt="Tri de vetements" class="w-full h-48 object-cover">
+<div class="p-6"><span class="inline-block text-xs font-semibold uppercase tracking-wider text-gold mb-3">Pratique</span><h3 class="font-semibold text-lg mb-2"><a href="/blog/article-2.html" class="text-charcoal hover:text-gold transition-colors">Comment trier la garde-robe lors d'une succession : 7 etapes</a></h3><p class="text-warm text-sm mb-3">Guide pratique en 7 etapes pour trier sereinement.</p><a href="/blog/article-2.html" class="text-gold font-semibold text-sm hover:text-gold-dark">Lire l'article &rarr;</a></div></div>
 
-  <section class="hero">
-    <div class="container">
-      <div class="breadcrumb"><a href="/">Accueil</a> <span>/</span> Blog</div>
-      <h1>Guides et ressources</h1>
-      <p class="subtitle">Guides pratiques, conseils et ressources pour gerer les vetements lors d'une succession au Quebec.</p>
-    </div>
-  </section>
+<div class="bg-white border border-border rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all">
+<img src="../assets/images/elegant-suit.jpg" alt="Complet elegant" class="w-full h-48 object-cover">
+<div class="p-6"><span class="inline-block text-xs font-semibold uppercase tracking-wider text-gold mb-3">Comparatif</span><h3 class="font-semibold text-lg mb-2"><a href="/blog/article-3.html" class="text-charcoal hover:text-gold transition-colors">Donner, vendre ou recycler : les 3 options</a></h3><p class="text-warm text-sm mb-3">Comparatif complet des options pour les vetements d'une succession.</p><a href="/blog/article-3.html" class="text-gold font-semibold text-sm hover:text-gold-dark">Lire l'article &rarr;</a></div></div>
+</div></div></section><section class="py-20 bg-sand"><div class="max-w-6xl mx-auto px-6"><div class="bg-gradient-to-br from-dark to-charcoal rounded-2xl p-10 md:p-14 text-center">
+<h2 class="font-serif text-3xl font-bold text-light mb-3">Besoin d'aide avec une garde-robe de succession?</h2>
+<p class="text-gray-400 max-w-xl mx-auto mb-8">Nos guides sont la pour vous informer. Quand vous etes pret, on est la pour vous accompagner.</p>
+<a href="/contact.html" class="bg-gold text-white px-8 py-3.5 rounded-md font-semibold hover:bg-gold-dark transition-all inline-block">Demander une estimation gratuite &rarr;</a>
+</div></div></section>
+<footer class="bg-dark text-light pt-16 pb-8"><div class="max-w-6xl mx-auto px-6"><div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12"><div><div class="font-serif text-xl font-bold mb-3">Heritage <span class="text-gold">Vestiaire</span></div><p class="text-gray-500 text-sm">Service specialise dans la gestion respectueuse des garde-robes de succession au Quebec.</p></div><div><h4 class="text-xs font-semibold uppercase tracking-wider text-gold mb-4">Services</h4><ul class="space-y-2 text-sm"><li><a href="/services.html" class="text-gray-500 hover:text-light transition-colors">Consignation</a></li><li><a href="/services.html" class="text-gray-500 hover:text-light transition-colors">Don avec recu fiscal</a></li><li><a href="/services.html" class="text-gray-500 hover:text-light transition-colors">Recyclage textile</a></li><li><a href="/comment-ca-marche.html" class="text-gray-500 hover:text-light transition-colors">Comment ca marche</a></li></ul></div><div><h4 class="text-xs font-semibold uppercase tracking-wider text-gold mb-4">Ressources</h4><ul class="space-y-2 text-sm"><li><a href="/blog/" class="text-gray-500 hover:text-light transition-colors">Blog</a></li><li><a href="/faq.html" class="text-gray-500 hover:text-light transition-colors">FAQ</a></li><li><a href="/a-propos.html" class="text-gray-500 hover:text-light transition-colors">A propos</a></li><li><a href="/contact.html" class="text-gray-500 hover:text-light transition-colors">Contact</a></li></ul></div><div><h4 class="text-xs font-semibold uppercase tracking-wider text-gold mb-4">Contact</h4><ul class="space-y-2 text-sm text-gray-500"><li>info@heritagevestiaire.com</li><li>Montreal, Quebec, Canada</li></ul></div></div><div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500"><span>&copy; 2026 Heritage Vestiaire. Tous droits reserves.</span><span><a href="/contact.html" class="hover:text-light transition-colors">Mentions legales</a></span></div></div></footer>
 
-  <section class="section">
-    <div class="container">
-      <div class="grid-3">
-        <div class="blog-card">
-          <div class="blog-card-body">
-            <span class="blog-card-tag">Guide complet</span>
-            <h3><a href="/blog/article-1.html">Que faire avec les vetements d'un proche decede?</a></h3>
-            <p>Guide pratique et humain pour gerer la garde-robe d'un proche disparu au Quebec. Options, etapes et conseils pour chaque situation.</p>
-            <a href="/blog/article-1.html" style="font-weight:600;font-size:.9rem;">Lire l'article &rarr;</a>
-          </div>
-        </div>
-        <div class="blog-card">
-          <div class="blog-card-body">
-            <span class="blog-card-tag">Pratique</span>
-            <h3><a href="/blog/article-2.html">Comment trier la garde-robe lors d'une succession : 7 etapes</a></h3>
-            <p>Guide pratique en 7 etapes pour trier la garde-robe d'un proche decede. De la preparation emotionnelle au tri final, chaque etape expliquee.</p>
-            <a href="/blog/article-2.html" style="font-weight:600;font-size:.9rem;">Lire l'article &rarr;</a>
-          </div>
-        </div>
-        <div class="blog-card">
-          <div class="blog-card-body">
-            <span class="blog-card-tag">Comparatif</span>
-            <h3><a href="/blog/article-3.html">Donner, vendre ou recycler : les 3 options pour les vetements d'une succession</a></h3>
-            <p>Comparatif complet des 3 options pour les vetements d'une succession au Quebec : consignation, don avec recu fiscal, recyclage textile.</p>
-            <a href="/blog/article-3.html" style="font-weight:600;font-size:.9rem;">Lire l'article &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="cta-banner">
-        <h2>Besoin d'aide avec une garde-robe de succession?</h2>
-        <p>Nos guides sont la pour vous informer. Quand vous etes pret, on est la pour vous accompagner.</p>
-        <a href="/contact.html" class="btn btn-primary">Demander une estimation gratuite &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><div class="logo">Heritage <span>Vestiaire</span></div><p>Service specialise dans la gestion respectueuse des garde-robes de succession au Quebec.</p></div>
-        <div><h4>Services</h4><ul class="footer-links"><li><a href="/services.html">Consignation</a></li><li><a href="/services.html">Don avec recu fiscal</a></li><li><a href="/services.html">Recyclage textile</a></li><li><a href="/comment-ca-marche.html">Comment ca marche</a></li></ul></div>
-        <div><h4>Ressources</h4><ul class="footer-links"><li><a href="/blog/">Blog</a></li><li><a href="/faq.html">FAQ</a></li><li><a href="/a-propos.html">A propos</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-        <div><h4>Contact</h4><ul class="footer-links"><li>info@heritagevestiaire.com</li><li>Montreal, Quebec, Canada</li></ul></div>
-      </div>
-      <div class="footer-bottom"><span>&copy; 2026 Heritage Vestiaire. Tous droits reserves.</span><span><a href="/contact.html">Mentions legales</a></span></div>
-    </div>
-  </footer>
-
-  <script src="../assets/js/main.js" defer></script>
 </body>
 </html>

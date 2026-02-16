@@ -12,257 +12,81 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1f3db;</text></svg>">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{colors:{cream:'#FAFAF8',sand:'#F2F0ED',charcoal:'#1A1A1A',warm:'#6B6560',gold:'#C9A96E','gold-dark':'#A8864D',border:'#E5E2DE',dark:'#2A2725',light:'#F5F3F0'},fontFamily:{serif:['Playfair Display','Georgia','serif'],sans:['Inter','Arial','sans-serif']}}}}</script>
+  <style>body{-webkit-font-smoothing:antialiased}.hero-overlay{background:linear-gradient(135deg,rgba(26,26,26,.7) 0%,rgba(42,39,37,.5) 100%)}.nav-open{display:flex!important}.faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease}.faq-item.open .faq-answer{max-height:500px;padding-top:.75rem}</style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "Comment confier la garde-robe d'une succession",
-    "step": [
-      {"@type": "HowToStep", "name": "Prenez contact", "text": "Remplissez notre formulaire en ligne ou appelez-nous."},
-      {"@type": "HowToStep", "name": "Estimation gratuite", "text": "Envoyez des photos ou prenez rendez-vous pour une visite a domicile."},
-      {"@type": "HowToStep", "name": "Tri et cueillette", "text": "Notre equipe se deplace et trie chaque piece sur place."},
-      {"@type": "HowToStep", "name": "Suivi et rapport", "text": "Recevez un rapport detaille avec le suivi des ventes, dons et recyclage."}
-    ]
-  }
+  {"@context":"https://schema.org","@type":"HowTo","name":"Comment confier la garde-robe d'une succession","step":[{"@type":"HowToStep","name":"Prenez contact","text":"Remplissez notre formulaire en ligne ou appelez-nous."},{"@type":"HowToStep","name":"Estimation gratuite","text":"Envoyez des photos ou prenez rendez-vous pour une visite a domicile."},{"@type":"HowToStep","name":"Tri et cueillette","text":"Notre equipe se deplace et trie chaque piece sur place."},{"@type":"HowToStep","name":"Suivi et rapport","text":"Recevez un rapport detaille avec le suivi des ventes, dons et recyclage."}]}
   </script>
 </head>
-<body>
-
-  <header class="header">
-    <div class="header-inner">
-      <a href="/" class="logo">Heritage <span>Vestiaire</span></a>
-      <nav class="nav">
-        <a href="/services.html">Services</a>
-        <a href="/comment-ca-marche.html" class="active">Comment ca marche</a>
-        <a href="/a-propos.html">A propos</a>
-        <a href="/blog/">Blog</a>
-        <a href="/faq.html">FAQ</a>
-        <a href="/contact.html" class="btn btn-primary">Estimation gratuite</a>
-      </nav>
-      <button class="mobile-toggle" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <div class="breadcrumb"><a href="/">Accueil</a> <span>/</span> Comment ca marche</div>
-      <h1>Un processus simple et bienveillant</h1>
-      <p class="subtitle">Gerer la garde-robe d'un proche disparu ne devrait pas etre une source de stress supplementaire. Notre processus est concu pour etre le plus simple et le plus humain possible. Quatre etapes, et c'est regle.</p>
-    </div>
-  </section>
-
-  <!-- Etape 1 -->
-  <section class="section">
-    <div class="container">
-      <div class="grid-2">
-        <div>
-          <div class="step" style="margin-bottom:1rem;">
-            <div class="step-num">1</div>
-            <div class="step-content"><h2 style="margin-bottom:0;">Prenez contact</h2></div>
-          </div>
-          <h3>Parlez-nous de votre situation</h3>
-          <p><strong>Par formulaire</strong> — Remplissez notre formulaire en ligne en quelques minutes. Decrivez la situation dans vos mots : taille approximative de la garde-robe, types de vetements, delai souhaite.</p>
-          <p><strong>Par telephone</strong> — Appelez-nous directement. Parfois, c'est plus simple de parler a quelqu'un.</p>
-          <p><strong>Par chatbot</strong> — Notre assistant en ligne est disponible 24/7 pour repondre a vos premieres questions.</p>
-        </div>
-        <div>
-          <h4>Ce qu'on a besoin de savoir :</h4>
-          <ul class="styled-list">
-            <li>Votre lien avec la personne decedee (pour adapter notre approche)</li>
-            <li>L'emplacement de la garde-robe (adresse pour la cueillette)</li>
-            <li>Une idee generale du volume (un placard? une piece entiere? plusieurs?)</li>
-            <li>Vos attentes : tout vendre? tout donner? un mix?</li>
-            <li>Votre delai — on s'adapte, que ce soit urgent ou pas</li>
-          </ul>
-          <p class="text-secondary"><strong>Aucun engagement a cette etape.</strong> C'est une conversation, pas un contrat.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Etape 2 -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="grid-2">
-        <div>
-          <div class="step" style="margin-bottom:1rem;">
-            <div class="step-num">2</div>
-            <div class="step-content"><h2 style="margin-bottom:0;">Estimation gratuite</h2></div>
-          </div>
-          <h3>On evalue le contenu ensemble</h3>
-          <p><strong>Option A — Par photos :</strong> Envoyez-nous des photos de la garde-robe (portes ouvertes, tiroirs, penderies). Pas besoin de tout sortir — on veut juste une vue d'ensemble. A partir de la, on vous donne une premiere estimation et nos recommandations.</p>
-          <p><strong>Option B — Visite a domicile :</strong> Pour les garde-robes importantes ou les situations complexes, notre equipe se deplace gratuitement. On regarde, on evalue, on discute avec vous sur place.</p>
-        </div>
-        <div>
-          <h4>Ce qu'on evalue :</h4>
-          <ul class="styled-list">
-            <li>Marques et qualite des pieces</li>
-            <li>Etat general (usure, taches, reparations necessaires)</li>
-            <li>Potentiel de revente en consignation</li>
-            <li>Pieces eligibles au don</li>
-            <li>Volume a recycler</li>
-          </ul>
-          <p><strong>Resultat :</strong> Vous recevez un plan detaille avec notre recommandation pour chaque categorie de vetements — consignation, don ou recyclage — et une estimation des revenus potentiels.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Etape 3 -->
-  <section class="section">
-    <div class="container">
-      <div class="grid-2">
-        <div>
-          <div class="step" style="margin-bottom:1rem;">
-            <div class="step-num">3</div>
-            <div class="step-content"><h2 style="margin-bottom:0;">Tri et cueillette</h2></div>
-          </div>
-          <h3>Notre equipe se deplace. Vous supervisez (ou pas).</h3>
-          <p>Le jour convenu, notre equipe arrive chez vous avec tout le materiel necessaire : boites, housses, sacs de tri. On procede piece par piece.</p>
-        </div>
-        <div>
-          <h4>Le tri :</h4>
-          <ul class="styled-list">
-            <li>Chaque vetement est examine individuellement</li>
-            <li>On separe en trois categories : consignation / don / recyclage</li>
-            <li>Les pieces de valeur sont protegees dans des housses</li>
-            <li>Vous validez les choix au fur et a mesure (ou vous nous faites confiance)</li>
-          </ul>
-          <h4>La cueillette :</h4>
-          <ul class="styled-list">
-            <li>On emballe tout proprement</li>
-            <li>On charge dans notre vehicule</li>
-            <li>On laisse l'espace propre et range</li>
-            <li>Duree typique : 2 a 4 heures selon le volume</li>
-          </ul>
-          <p class="text-secondary"><strong>Vous n'avez rien a faire</strong> sauf nous ouvrir la porte. Si vous preferez ne pas etre present pendant le tri, c'est parfaitement correct aussi.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Etape 4 -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="grid-2">
-        <div>
-          <div class="step" style="margin-bottom:1rem;">
-            <div class="step-num">4</div>
-            <div class="step-content"><h2 style="margin-bottom:0;">Suivi et rapport</h2></div>
-          </div>
-          <h3>Transparence totale, du debut a la fin</h3>
-          <p>Dans les jours suivant la cueillette, vous recevez votre rapport Heritage Vestiaire :</p>
-        </div>
-        <div>
-          <h4>Section Consignation :</h4>
-          <ul class="styled-list">
-            <li>Liste des pieces mises en vente avec photos</li>
-            <li>Prix de vente affiches</li>
-            <li>Suivi des ventes au fur et a mesure (notifications par courriel)</li>
-            <li>Paiement par virement une fois les ventes completees</li>
-          </ul>
-          <h4>Section Don :</h4>
-          <ul class="styled-list">
-            <li>Liste des pieces donnees</li>
-            <li>Nom de l'organisme beneficiaire</li>
-            <li>Recu fiscal pour vos impots</li>
-          </ul>
-          <h4>Section Recyclage :</h4>
-          <ul class="styled-list">
-            <li>Volume de textiles recycles</li>
-            <li>Confirmation de recyclage de notre partenaire</li>
-          </ul>
-          <p class="text-secondary"><strong>Vous restez informe a chaque etape.</strong> Pas de boite noire. Pas de surprise.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Delais -->
-  <section class="section">
-    <div class="container">
-      <h2 class="text-center">A quoi s'attendre</h2>
-      <hr class="sep sep-center">
-      <div class="table-wrap" style="max-width:700px;margin:2rem auto;">
-        <table>
-          <thead><tr><th>Etape</th><th>Delai</th></tr></thead>
-          <tbody>
-            <tr><td>Reponse a votre demande</td><td>Moins de 24 heures</td></tr>
-            <tr><td>Estimation (par photos)</td><td>2 a 3 jours ouvrables</td></tr>
-            <tr><td>Visite a domicile</td><td>Dans la semaine</td></tr>
-            <tr><td>Cueillette</td><td>Selon vos disponibilites</td></tr>
-            <tr><td>Rapport initial</td><td>5 jours apres la cueillette</td></tr>
-            <tr><td>Ventes en consignation</td><td>2 a 12 semaines</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="text-center text-secondary"><strong>Urgence?</strong> Si vous devez vider un logement rapidement (vente immobiliere, fin de bail), on peut accelerer le processus. Mentionnez-le dans votre demande.</p>
-    </div>
-  </section>
-
-  <!-- Questions courantes -->
-  <section class="section section-alt">
-    <div class="container" style="max-width:780px;">
-      <h2 class="text-center">Questions courantes sur le processus</h2>
-      <hr class="sep sep-center">
-      <div style="margin-top:2rem;">
-        <div class="faq-group">
-          <div class="faq-item">
-            <div class="faq-question">Est-ce que ca coute quelque chose?</div>
-            <div class="faq-answer">La visite a domicile, le tri et la cueillette sont gratuits. Notre remuneration vient de la commission sur les ventes en consignation. Si aucun vetement n'est consigne, il n'y a aucun frais.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">Quelle est la taille minimum?</div>
-            <div class="faq-answer">Il n'y a pas de minimum strict. Que ce soit un placard ou une maison entiere, on s'adapte. Pour les tres petits lots, l'envoi par la poste est aussi une option.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">Est-ce que vous prenez les vetements pour hommes?</div>
-            <div class="faq-answer">Absolument. Complets, chemises, manteaux, vetements de sport — on traite les garde-robes completes, hommes et femmes.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">Je ne suis pas certain de la valeur. Comment savoir?</div>
-            <div class="faq-answer">C'est exactement pour ca qu'on offre l'estimation gratuite. Envoyez-nous des photos et on vous dit ce qui a du potentiel. Vous seriez surpris — certaines pieces qui semblent ordinaires valent beaucoup plus qu'on pense.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section">
-    <div class="container">
-      <div class="cta-banner">
-        <h2>Pret a commencer?</h2>
-        <p>La premiere etape est la plus simple : parlez-nous de votre situation. C'est gratuit, sans engagement, et on repond en moins de 24 heures.</p>
-        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-          <a href="/contact.html" class="btn btn-primary">Demander une estimation gratuite &rarr;</a>
-          <a href="/faq.html" class="btn btn-secondary" style="border-color:rgba(255,255,255,.3);color:#F5F3F0;">Consulter la FAQ &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="logo">Heritage <span>Vestiaire</span></div>
-          <p>Service specialise dans la gestion respectueuse des garde-robes de succession au Quebec.</p>
-        </div>
-        <div><h4>Services</h4><ul class="footer-links"><li><a href="/services.html">Consignation</a></li><li><a href="/services.html">Don avec recu fiscal</a></li><li><a href="/services.html">Recyclage textile</a></li><li><a href="/comment-ca-marche.html">Comment ca marche</a></li></ul></div>
-        <div><h4>Ressources</h4><ul class="footer-links"><li><a href="/blog/">Blog</a></li><li><a href="/faq.html">FAQ</a></li><li><a href="/a-propos.html">A propos</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-        <div><h4>Contact</h4><ul class="footer-links"><li>info@heritagevestiaire.com</li><li>Montreal, Quebec, Canada</li></ul></div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 Heritage Vestiaire. Tous droits reserves.</span>
-        <span><a href="/contact.html">Mentions legales</a></span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js" defer></script>
+<body class="font-sans text-charcoal bg-cream leading-relaxed">
+<header class="sticky top-0 z-50 bg-cream/97 backdrop-blur-md border-b border-border"><div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4"><a href="/" class="font-serif text-xl font-bold text-charcoal">Heritage <span class="text-gold">Vestiaire</span></a><nav class="hidden md:flex items-center gap-8" id="nav"><a href="/services.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">Services</a><a href="/comment-ca-marche.html" class="text-charcoal text-sm font-medium">Comment ca marche</a><a href="/a-propos.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">A propos</a><a href="/blog/" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">Blog</a><a href="/faq.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">FAQ</a><a href="/contact.html" class="bg-gold text-white px-5 py-2.5 rounded-md font-semibold text-sm hover:bg-gold-dark transition-all hover:-translate-y-0.5 hover:shadow-lg">Estimation gratuite</a></nav><button class="md:hidden p-2" onclick="document.getElementById('nav').classList.toggle('nav-open');document.getElementById('nav').classList.toggle('flex-col');document.getElementById('nav').classList.toggle('absolute');document.getElementById('nav').classList.toggle('top-full');document.getElementById('nav').classList.toggle('left-0');document.getElementById('nav').classList.toggle('right-0');document.getElementById('nav').classList.toggle('bg-cream');document.getElementById('nav').classList.toggle('p-6');document.getElementById('nav').classList.toggle('border-b');document.getElementById('nav').classList.toggle('border-border');" aria-label="Menu"><div class="w-6 h-0.5 bg-charcoal mb-1.5"></div><div class="w-6 h-0.5 bg-charcoal mb-1.5"></div><div class="w-6 h-0.5 bg-charcoal"></div></button></div></header>
+<section class="relative py-24 md:py-32"><img src="assets/images/sorting-clothes.jpg" alt="Un processus simple et bienveillant" class="absolute inset-0 w-full h-full object-cover"><div class="hero-overlay absolute inset-0"></div><div class="relative z-10 max-w-6xl mx-auto px-6"><div class="text-sm text-gray-300 mb-4"><a href="/" class="hover:text-gold transition-colors">Accueil</a> <span class="mx-2">/</span> Comment ca marche</div><h1 class="font-serif text-4xl md:text-5xl font-bold text-white leading-tight mb-6">Un processus simple et bienveillant</h1><p class="text-lg text-gray-300 max-w-2xl leading-relaxed">Gerer la garde-robe d'un proche disparu ne devrait pas etre une source de stress supplementaire. Quatre etapes, et c'est regle.</p></div></section><section class="py-20"><div class="max-w-6xl mx-auto px-6"><div class="grid md:grid-cols-2 gap-12 items-center">
+<div class=""><img src="assets/images/consultation.jpg" alt="Prenez contact" class="rounded-xl shadow-lg w-full"></div>
+<div class=""><div class="flex items-center gap-4 mb-4"><div class="shrink-0 w-14 h-14 bg-gold text-white rounded-full flex items-center justify-center font-serif font-bold text-xl">1</div><h2 class="font-serif text-3xl font-bold">Prenez contact</h2></div>
+<h3 class="font-semibold text-lg mb-3">Parlez-nous de votre situation</h3>
+<p class="text-warm mb-2"><strong class="text-charcoal">Par formulaire</strong> — Remplissez notre formulaire en ligne en quelques minutes.</p>
+<p class="text-warm mb-2"><strong class="text-charcoal">Par telephone</strong> — Appelez-nous directement.</p>
+<p class="text-warm mb-4"><strong class="text-charcoal">Par chatbot</strong> — Notre assistant en ligne est disponible 24/7.</p>
+<h4 class="font-semibold mb-2">Ce qu'on a besoin de savoir :</h4>
+<ul class="space-y-2 text-warm text-sm mb-4"><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Votre lien avec la personne decedee</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>L'emplacement de la garde-robe</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Une idee generale du volume</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Vos attentes : tout vendre? tout donner? un mix?</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Votre delai</li></ul>
+<p class="text-warm text-sm"><strong class="text-charcoal">Aucun engagement a cette etape.</strong> C'est une conversation, pas un contrat.</p></div>
+</div></div></section><section class="py-20 bg-sand"><div class="max-w-6xl mx-auto px-6"><div class="grid md:grid-cols-2 gap-12 items-center">
+<div class=" md:order-2"><img src="assets/images/folded-clothes.jpg" alt="Estimation gratuite" class="rounded-xl shadow-lg w-full"></div>
+<div class=" md:order-1"><div class="flex items-center gap-4 mb-4"><div class="shrink-0 w-14 h-14 bg-gold text-white rounded-full flex items-center justify-center font-serif font-bold text-xl">2</div><h2 class="font-serif text-3xl font-bold">Estimation gratuite</h2></div>
+<h3 class="font-semibold text-lg mb-3">On evalue le contenu ensemble</h3>
+<p class="text-warm mb-2"><strong class="text-charcoal">Option A — Par photos :</strong> Envoyez-nous des photos de la garde-robe. On vous donne une premiere estimation.</p>
+<p class="text-warm mb-4"><strong class="text-charcoal">Option B — Visite a domicile :</strong> Pour les garde-robes importantes, notre equipe se deplace gratuitement.</p>
+<h4 class="font-semibold mb-2">Ce qu'on evalue :</h4>
+<ul class="space-y-2 text-warm text-sm mb-4"><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Marques et qualite des pieces</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Etat general</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Potentiel de revente</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Pieces eligibles au don</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Volume a recycler</li></ul>
+<p class="text-warm text-sm"><strong class="text-charcoal">Resultat :</strong> Un plan detaille avec nos recommandations et une estimation des revenus potentiels.</p></div>
+</div></div></section><section class="py-20"><div class="max-w-6xl mx-auto px-6"><div class="grid md:grid-cols-2 gap-12 items-center">
+<div class=""><img src="assets/images/clothing-rack.jpg" alt="Tri et cueillette" class="rounded-xl shadow-lg w-full"></div>
+<div class=""><div class="flex items-center gap-4 mb-4"><div class="shrink-0 w-14 h-14 bg-gold text-white rounded-full flex items-center justify-center font-serif font-bold text-xl">3</div><h2 class="font-serif text-3xl font-bold">Tri et cueillette</h2></div>
+<h3 class="font-semibold text-lg mb-3">Notre equipe se deplace. Vous supervisez (ou pas).</h3>
+<p class="text-warm mb-4">Le jour convenu, notre equipe arrive avec tout le materiel necessaire.</p>
+<h4 class="font-semibold mb-2">Le tri :</h4>
+<ul class="space-y-2 text-warm text-sm mb-4"><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Chaque vetement examine individuellement</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Separation en trois categories</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Pieces de valeur protegees dans des housses</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Vous validez les choix au fur et a mesure</li></ul>
+<h4 class="font-semibold mb-2">La cueillette :</h4>
+<ul class="space-y-2 text-warm text-sm mb-4"><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>On emballe tout proprement</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>On charge dans notre vehicule</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>On laisse l'espace propre et range</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Duree typique : 2 a 4 heures</li></ul>
+<p class="text-warm text-sm"><strong class="text-charcoal">Vous n'avez rien a faire</strong> sauf nous ouvrir la porte.</p></div>
+</div></div></section><section class="py-20 bg-sand"><div class="max-w-6xl mx-auto px-6"><div class="grid md:grid-cols-2 gap-12 items-center">
+<div class=" md:order-2"><img src="assets/images/team-meeting.jpg" alt="Suivi et rapport" class="rounded-xl shadow-lg w-full"></div>
+<div class=" md:order-1"><div class="flex items-center gap-4 mb-4"><div class="shrink-0 w-14 h-14 bg-gold text-white rounded-full flex items-center justify-center font-serif font-bold text-xl">4</div><h2 class="font-serif text-3xl font-bold">Suivi et rapport</h2></div>
+<h3 class="font-semibold text-lg mb-3">Transparence totale, du debut a la fin</h3>
+<p class="text-warm mb-4">Dans les jours suivant la cueillette, vous recevez votre rapport :</p>
+<h4 class="font-semibold mb-2">Section Consignation :</h4>
+<ul class="space-y-1 text-warm text-sm mb-3"><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Liste des pieces mises en vente avec photos</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Prix de vente affiches</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Suivi des ventes (notifications par courriel)</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Paiement par virement</li></ul>
+<h4 class="font-semibold mb-2">Section Don :</h4>
+<ul class="space-y-1 text-warm text-sm mb-3"><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Liste des pieces donnees</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Nom de l'organisme beneficiaire</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Recu fiscal pour vos impots</li></ul>
+<h4 class="font-semibold mb-2">Section Recyclage :</h4>
+<ul class="space-y-1 text-warm text-sm mb-3"><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Volume de textiles recycles</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Confirmation de recyclage</li></ul>
+<p class="text-warm text-sm"><strong class="text-charcoal">Vous restez informe a chaque etape.</strong> Pas de boite noire.</p></div>
+</div></div></section><section class="py-20"><div class="max-w-6xl mx-auto px-6">
+<h2 class="font-serif text-3xl font-bold text-center mb-3">A quoi s'attendre</h2>
+<div class="w-16 h-0.5 bg-gold mx-auto mb-10"></div>
+<div class="max-w-2xl mx-auto overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left p-3 bg-dark text-light font-semibold text-xs uppercase tracking-wider rounded-tl-lg">Etape</th><th class="text-left p-3 bg-dark text-light font-semibold text-xs uppercase tracking-wider rounded-tr-lg">Delai</th></tr></thead><tbody>
+<tr class="hover:bg-sand"><td class="p-3 border-b border-border">Reponse a votre demande</td><td class="p-3 border-b border-border text-warm">Moins de 24 heures</td></tr>
+<tr class="hover:bg-sand"><td class="p-3 border-b border-border">Estimation (par photos)</td><td class="p-3 border-b border-border text-warm">2 a 3 jours ouvrables</td></tr>
+<tr class="hover:bg-sand"><td class="p-3 border-b border-border">Visite a domicile</td><td class="p-3 border-b border-border text-warm">Dans la semaine</td></tr>
+<tr class="hover:bg-sand"><td class="p-3 border-b border-border">Cueillette</td><td class="p-3 border-b border-border text-warm">Selon vos disponibilites</td></tr>
+<tr class="hover:bg-sand"><td class="p-3 border-b border-border">Rapport initial</td><td class="p-3 border-b border-border text-warm">5 jours apres la cueillette</td></tr>
+<tr class="hover:bg-sand"><td class="p-3">Ventes en consignation</td><td class="p-3 text-warm">2 a 12 semaines</td></tr>
+</tbody></table></div>
+<p class="text-center text-warm text-sm mt-6"><strong class="text-charcoal">Urgence?</strong> On peut accelerer le processus. Mentionnez-le dans votre demande.</p>
+</div></section><section class="py-20 bg-sand"><div class="max-w-3xl mx-auto px-6">
+<h2 class="font-serif text-3xl font-bold text-center mb-3">Questions courantes sur le processus</h2>
+<div class="w-16 h-0.5 bg-gold mx-auto mb-10"></div>
+<div class="faq-group">
+<div class="faq-item border-b border-border py-4"><div class="faq-question flex justify-between items-center cursor-pointer font-semibold">Est-ce que ca coute quelque chose? <span class="text-gold text-xl shrink-0 ml-4">+</span></div><div class="faq-answer text-warm text-sm">La visite a domicile, le tri et la cueillette sont gratuits. Notre remuneration vient de la commission sur les ventes en consignation. Si aucun vetement n'est consigne, il n'y a aucun frais.</div></div>
+<div class="faq-item border-b border-border py-4"><div class="faq-question flex justify-between items-center cursor-pointer font-semibold">Quelle est la taille minimum? <span class="text-gold text-xl shrink-0 ml-4">+</span></div><div class="faq-answer text-warm text-sm">Il n'y a pas de minimum strict. Que ce soit un placard ou une maison entiere, on s'adapte.</div></div>
+<div class="faq-item border-b border-border py-4"><div class="faq-question flex justify-between items-center cursor-pointer font-semibold">Est-ce que vous prenez les vetements pour hommes? <span class="text-gold text-xl shrink-0 ml-4">+</span></div><div class="faq-answer text-warm text-sm">Absolument. Complets, chemises, manteaux, vetements de sport — on traite les garde-robes completes, hommes et femmes.</div></div>
+<div class="faq-item border-b border-border py-4"><div class="faq-question flex justify-between items-center cursor-pointer font-semibold">Je ne suis pas certain de la valeur. Comment savoir? <span class="text-gold text-xl shrink-0 ml-4">+</span></div><div class="faq-answer text-warm text-sm">C'est exactement pour ca qu'on offre l'estimation gratuite. Envoyez-nous des photos et on vous dit ce qui a du potentiel.</div></div>
+</div>
+</div></section><section class="py-20"><div class="max-w-6xl mx-auto px-6"><div class="bg-gradient-to-br from-dark to-charcoal rounded-2xl p-10 md:p-14 text-center"><h2 class="font-serif text-3xl font-bold text-light mb-3">Pret a commencer?</h2><p class="text-gray-400 max-w-xl mx-auto mb-8">La premiere etape est la plus simple : parlez-nous de votre situation. C'est gratuit et on repond en moins de 24 heures.</p><div class="flex flex-wrap gap-4 justify-center"><a href="/contact.html" class="bg-gold text-white px-8 py-3.5 rounded-md font-semibold hover:bg-gold-dark transition-all inline-block">Demander une estimation gratuite &rarr;</a> <a href="/faq.html" class="border-2 border-white/30 text-light px-8 py-3.5 rounded-md font-semibold hover:border-gold hover:text-gold transition-all inline-block">Consulter la FAQ &rarr;</a></div></div></div></section>
+<footer class="bg-dark text-light pt-16 pb-8"><div class="max-w-6xl mx-auto px-6"><div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12"><div><div class="font-serif text-xl font-bold mb-3">Heritage <span class="text-gold">Vestiaire</span></div><p class="text-gray-500 text-sm">Service specialise dans la gestion respectueuse des garde-robes de succession au Quebec.</p></div><div><h4 class="text-xs font-semibold uppercase tracking-wider text-gold mb-4">Services</h4><ul class="space-y-2 text-sm"><li><a href="/services.html" class="text-gray-500 hover:text-light transition-colors">Consignation</a></li><li><a href="/services.html" class="text-gray-500 hover:text-light transition-colors">Don avec recu fiscal</a></li><li><a href="/services.html" class="text-gray-500 hover:text-light transition-colors">Recyclage textile</a></li><li><a href="/comment-ca-marche.html" class="text-gray-500 hover:text-light transition-colors">Comment ca marche</a></li></ul></div><div><h4 class="text-xs font-semibold uppercase tracking-wider text-gold mb-4">Ressources</h4><ul class="space-y-2 text-sm"><li><a href="/blog/" class="text-gray-500 hover:text-light transition-colors">Blog</a></li><li><a href="/faq.html" class="text-gray-500 hover:text-light transition-colors">FAQ</a></li><li><a href="/a-propos.html" class="text-gray-500 hover:text-light transition-colors">A propos</a></li><li><a href="/contact.html" class="text-gray-500 hover:text-light transition-colors">Contact</a></li></ul></div><div><h4 class="text-xs font-semibold uppercase tracking-wider text-gold mb-4">Contact</h4><ul class="space-y-2 text-sm text-gray-500"><li>info@heritagevestiaire.com</li><li>Montreal, Quebec, Canada</li></ul></div></div><div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500"><span>&copy; 2026 Heritage Vestiaire. Tous droits reserves.</span><span><a href="/contact.html" class="hover:text-light transition-colors">Mentions legales</a></span></div></div></footer>
+<script>document.querySelectorAll('.faq-question').forEach(function(q){q.addEventListener('click',function(){var item=this.closest('.faq-item');var wasOpen=item.classList.contains('open');item.closest('.faq-group').querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open')});if(!wasOpen)item.classList.add('open')})});</script>
 </body>
 </html>

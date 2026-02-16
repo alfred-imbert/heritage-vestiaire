@@ -12,189 +12,62 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1f3db;</text></svg>">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{colors:{cream:'#FAFAF8',sand:'#F2F0ED',charcoal:'#1A1A1A',warm:'#6B6560',gold:'#C9A96E','gold-dark':'#A8864D',border:'#E5E2DE',dark:'#2A2725',light:'#F5F3F0'},fontFamily:{serif:['Playfair Display','Georgia','serif'],sans:['Inter','Arial','sans-serif']}}}}</script>
+  <style>body{-webkit-font-smoothing:antialiased}.hero-overlay{background:linear-gradient(135deg,rgba(26,26,26,.7) 0%,rgba(42,39,37,.5) 100%)}.nav-open{display:flex!important}</style>
+
 </head>
-<body>
+<body class="font-sans text-charcoal bg-cream leading-relaxed">
+<header class="sticky top-0 z-50 bg-cream/97 backdrop-blur-md border-b border-border"><div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4"><a href="/" class="font-serif text-xl font-bold text-charcoal">Heritage <span class="text-gold">Vestiaire</span></a><nav class="hidden md:flex items-center gap-8" id="nav"><a href="/services.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">Services</a><a href="/comment-ca-marche.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">Comment ca marche</a><a href="/a-propos.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">A propos</a><a href="/blog/" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">Blog</a><a href="/faq.html" class="text-warm text-sm font-medium hover:text-charcoal transition-colors">FAQ</a><a href="/contact.html" class="bg-gold text-white px-5 py-2.5 rounded-md font-semibold text-sm hover:bg-gold-dark transition-all hover:-translate-y-0.5 hover:shadow-lg">Estimation gratuite</a></nav><button class="md:hidden p-2" onclick="document.getElementById('nav').classList.toggle('nav-open');document.getElementById('nav').classList.toggle('flex-col');document.getElementById('nav').classList.toggle('absolute');document.getElementById('nav').classList.toggle('top-full');document.getElementById('nav').classList.toggle('left-0');document.getElementById('nav').classList.toggle('right-0');document.getElementById('nav').classList.toggle('bg-cream');document.getElementById('nav').classList.toggle('p-6');document.getElementById('nav').classList.toggle('border-b');document.getElementById('nav').classList.toggle('border-border');" aria-label="Menu"><div class="w-6 h-0.5 bg-charcoal mb-1.5"></div><div class="w-6 h-0.5 bg-charcoal mb-1.5"></div><div class="w-6 h-0.5 bg-charcoal"></div></button></div></header>
+<section class="relative py-24 md:py-32"><img src="assets/images/contact-office.jpg" alt="Parlons de votre situation" class="absolute inset-0 w-full h-full object-cover"><div class="hero-overlay absolute inset-0"></div><div class="relative z-10 max-w-6xl mx-auto px-6"><div class="text-sm text-gray-300 mb-4"><a href="/" class="hover:text-gold transition-colors">Accueil</a> <span class="mx-2">/</span> Contact</div><h1 class="font-serif text-4xl md:text-5xl font-bold text-white leading-tight mb-6">Parlons de votre situation</h1><p class="text-lg text-gray-300 max-w-2xl leading-relaxed">Chaque situation est unique. On vous ecoute. Premier contact gratuit, sans engagement, sans pression.</p></div></section><section class="py-20"><div class="max-w-6xl mx-auto px-6"><div class="grid md:grid-cols-5 gap-12">
+<div class="md:col-span-3">
+<h2 class="font-serif text-3xl font-bold mb-3">Demander une estimation gratuite</h2>
+<div class="w-16 h-0.5 bg-gold mb-8"></div>
+<form action="#" method="POST" onsubmit="alert('Merci! Nous vous contacterons dans les 24 heures.'); return false;">
+<h4 class="font-semibold mb-4">Vos coordonnees</h4>
+<div class="mb-4"><label class="block font-semibold text-sm mb-1">Nom complet <span class="text-gold">*</span></label><input type="text" required placeholder="Votre nom" class="w-full px-4 py-3 border border-border rounded-lg text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/10"></div>
+<div class="mb-4"><label class="block font-semibold text-sm mb-1">Courriel <span class="text-gold">*</span></label><input type="email" required placeholder="votre@courriel.com" class="w-full px-4 py-3 border border-border rounded-lg text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/10"></div>
+<div class="mb-4"><label class="block font-semibold text-sm mb-1">Telephone</label><input type="tel" placeholder="(514) 000-0000" class="w-full px-4 py-3 border border-border rounded-lg text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/10"></div>
+<div class="mb-6"><label class="block font-semibold text-sm mb-1">Ville / region <span class="text-gold">*</span></label><input type="text" required placeholder="Montreal, Laval, Quebec..." class="w-full px-4 py-3 border border-border rounded-lg text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/10"></div>
 
-  <header class="header">
-    <div class="header-inner">
-      <a href="/" class="logo">Heritage <span>Vestiaire</span></a>
-      <nav class="nav">
-        <a href="/services.html">Services</a>
-        <a href="/comment-ca-marche.html">Comment ca marche</a>
-        <a href="/a-propos.html">A propos</a>
-        <a href="/blog/">Blog</a>
-        <a href="/faq.html">FAQ</a>
-        <a href="/contact.html" class="btn btn-primary active">Estimation gratuite</a>
-      </nav>
-      <button class="mobile-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+<h4 class="font-semibold mb-4">La garde-robe</h4>
+<div class="mb-4"><label class="block font-semibold text-sm mb-1">Votre lien avec la personne decedee</label><select class="w-full px-4 py-3 border border-border rounded-lg text-sm focus:outline-none focus:border-gold bg-white"><option value="">Choisir...</option><option>Enfant</option><option>Conjoint(e)</option><option>Ami(e)</option><option>Liquidateur</option><option>Autre</option></select></div>
+<div class="mb-4"><label class="block font-semibold text-sm mb-1">Volume approximatif</label><select class="w-full px-4 py-3 border border-border rounded-lg text-sm focus:outline-none focus:border-gold bg-white"><option value="">Choisir...</option><option>Un placard / une commode</option><option>Plusieurs placards / une chambre complete</option><option>Plusieurs pieces / maison entiere</option><option>Je ne sais pas</option></select></div>
+<div class="mb-6"><label class="block font-semibold text-sm mb-2">Types de vetements presents</label>
+<div class="space-y-2 text-sm text-warm">
+<label class="flex items-center gap-2"><input type="checkbox" class="accent-gold w-4 h-4"> Vetements de tous les jours</label>
+<label class="flex items-center gap-2"><input type="checkbox" class="accent-gold w-4 h-4"> Vetements de marque / designer</label>
+<label class="flex items-center gap-2"><input type="checkbox" class="accent-gold w-4 h-4"> Vintage (avant 2000)</label>
+<label class="flex items-center gap-2"><input type="checkbox" class="accent-gold w-4 h-4"> Fourrures / cuirs</label>
+<label class="flex items-center gap-2"><input type="checkbox" class="accent-gold w-4 h-4"> Accessoires (sacs, foulards, chapeaux, bijoux)</label>
+</div></div>
 
-  <section class="hero">
-    <div class="container">
-      <div class="breadcrumb"><a href="/">Accueil</a> <span>/</span> Contact</div>
-      <h1>Parlons de votre situation</h1>
-      <p class="subtitle">Chaque situation est unique. On vous ecoute. Que vous soyez au debut du processus ou que la succession soit urgente, nous sommes la pour vous accompagner. Premier contact gratuit, sans engagement, sans pression.</p>
-    </div>
-  </section>
+<h4 class="font-semibold mb-4">Vos preferences</h4>
+<div class="mb-4"><label class="block font-semibold text-sm mb-2">Que souhaitez-vous pour ces vetements?</label>
+<div class="space-y-2 text-sm text-warm">
+<label class="flex items-center gap-2"><input type="radio" name="preference" class="accent-gold w-4 h-4"> Maximiser les revenus (consignation prioritaire)</label>
+<label class="flex items-center gap-2"><input type="radio" name="preference" class="accent-gold w-4 h-4"> Maximiser les dons (recu fiscal)</label>
+<label class="flex items-center gap-2"><input type="radio" name="preference" class="accent-gold w-4 h-4"> Un mix des deux — vous me conseillez</label>
+<label class="flex items-center gap-2"><input type="radio" name="preference" class="accent-gold w-4 h-4"> Je ne sais pas encore</label>
+</div></div>
+<div class="mb-4"><label class="block font-semibold text-sm mb-1">Y a-t-il un delai a respecter?</label><input type="text" placeholder="Ex: vente de maison en mars, fin de bail..." class="w-full px-4 py-3 border border-border rounded-lg text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/10"></div>
+<div class="mb-6"><label class="block font-semibold text-sm mb-1">Commentaires / questions</label><textarea placeholder="Parlez-nous de votre situation dans vos mots." class="w-full px-4 py-3 border border-border rounded-lg text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/10 min-h-[120px] resize-y"></textarea></div>
+<button type="submit" class="w-full bg-gold text-white py-3.5 rounded-md font-semibold hover:bg-gold-dark transition-all">Envoyer ma demande &rarr;</button>
+<p class="text-center text-warm text-xs mt-3">Nous repondons dans les 24 heures, du lundi au vendredi.</p>
+</form>
+</div>
 
-  <section class="section">
-    <div class="container">
-      <div class="grid-2">
+<div class="md:col-span-2 space-y-6">
+<div class="bg-white border border-border rounded-xl p-6"><h3 class="font-semibold text-lg mb-3">Vous preferez nous parler directement?</h3><div class="w-12 h-0.5 bg-gold mb-4"></div><div class="mb-3"><strong class="block text-sm mb-1">Telephone</strong><span class="text-warm text-sm">Appelez-nous du lundi au vendredi, 9h a 17h.</span></div><div><strong class="block text-sm mb-1">Courriel</strong><span class="text-warm text-sm">info@heritagevestiaire.com</span></div></div>
+<div class="bg-white border border-border rounded-xl p-6"><h3 class="font-semibold text-lg mb-3">Apres votre demande</h3><div class="w-12 h-0.5 bg-gold mb-4"></div><ol class="space-y-2 text-sm text-warm list-decimal ml-4"><li><strong class="text-charcoal">Reponse en 24h</strong> — On vous contacte</li><li><strong class="text-charcoal">Estimation</strong> — Par photos ou visite a domicile</li><li><strong class="text-charcoal">Plan sur mesure</strong> — Nos recommandations</li><li><strong class="text-charcoal">Vous decidez</strong> — Aucune obligation</li></ol></div>
+<div class="bg-white border border-border rounded-xl p-6"><h3 class="font-semibold text-lg mb-3">Vous etes professionnel?</h3><div class="w-12 h-0.5 bg-gold mb-4"></div><p class="text-warm text-sm mb-3">Notaires, liquidateurs, gestionnaires immobiliers — service adapte :</p><ul class="space-y-1 text-warm text-sm mb-3"><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Delais prioritaires</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Rapports compatibles reddition de comptes</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Tarifs partenaires</li><li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0"></span>Referencement mutuel</li></ul><p class="font-semibold text-sm">pro@heritagevestiaire.com</p></div>
+<div class="bg-white border border-border rounded-xl p-6"><h3 class="font-semibold text-lg mb-3">Zone de service</h3><div class="w-12 h-0.5 bg-gold mb-4"></div><div class="flex flex-wrap gap-2 mb-3"><span class="px-3 py-1 bg-sand border border-border rounded-full text-xs text-warm">Montreal</span><span class="px-3 py-1 bg-sand border border-border rounded-full text-xs text-warm">Laval</span><span class="px-3 py-1 bg-sand border border-border rounded-full text-xs text-warm">Longueuil</span><span class="px-3 py-1 bg-sand border border-border rounded-full text-xs text-warm">Rive-Sud</span><span class="px-3 py-1 bg-sand border border-border rounded-full text-xs text-warm">Rive-Nord</span><span class="px-3 py-1 bg-sand border border-border rounded-full text-xs text-warm">Quebec</span><span class="px-3 py-1 bg-sand border border-border rounded-full text-xs text-warm">Gatineau</span><span class="px-3 py-1 bg-sand border border-border rounded-full text-xs text-warm">Sherbrooke</span></div><p class="text-warm text-xs">Regions eloignees : on offre aussi un service d'envoi par la poste.</p></div>
+<div class="bg-white border border-border rounded-xl p-6"><h3 class="font-semibold text-lg mb-3">Engagement confidentialite</h3><div class="w-12 h-0.5 bg-gold mb-4"></div><p class="text-warm text-sm">Les informations que vous nous transmettez sont strictement confidentielles. Nous ne partageons rien avec des tiers.</p></div>
+</div>
+</div></div></section>
+<footer class="bg-dark text-light pt-16 pb-8"><div class="max-w-6xl mx-auto px-6"><div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12"><div><div class="font-serif text-xl font-bold mb-3">Heritage <span class="text-gold">Vestiaire</span></div><p class="text-gray-500 text-sm">Service specialise dans la gestion respectueuse des garde-robes de succession au Quebec.</p></div><div><h4 class="text-xs font-semibold uppercase tracking-wider text-gold mb-4">Services</h4><ul class="space-y-2 text-sm"><li><a href="/services.html" class="text-gray-500 hover:text-light transition-colors">Consignation</a></li><li><a href="/services.html" class="text-gray-500 hover:text-light transition-colors">Don avec recu fiscal</a></li><li><a href="/services.html" class="text-gray-500 hover:text-light transition-colors">Recyclage textile</a></li><li><a href="/comment-ca-marche.html" class="text-gray-500 hover:text-light transition-colors">Comment ca marche</a></li></ul></div><div><h4 class="text-xs font-semibold uppercase tracking-wider text-gold mb-4">Ressources</h4><ul class="space-y-2 text-sm"><li><a href="/blog/" class="text-gray-500 hover:text-light transition-colors">Blog</a></li><li><a href="/faq.html" class="text-gray-500 hover:text-light transition-colors">FAQ</a></li><li><a href="/a-propos.html" class="text-gray-500 hover:text-light transition-colors">A propos</a></li><li><a href="/contact.html" class="text-gray-500 hover:text-light transition-colors">Contact</a></li></ul></div><div><h4 class="text-xs font-semibold uppercase tracking-wider text-gold mb-4">Contact</h4><ul class="space-y-2 text-sm text-gray-500"><li>info@heritagevestiaire.com</li><li>Montreal, Quebec, Canada</li></ul></div></div><div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500"><span>&copy; 2026 Heritage Vestiaire. Tous droits reserves.</span><span><a href="/contact.html" class="hover:text-light transition-colors">Mentions legales</a></span></div></div></footer>
 
-        <!-- Formulaire -->
-        <div>
-          <h2>Demander une estimation gratuite</h2>
-          <hr class="sep">
-          <form action="#" method="POST" onsubmit="alert('Merci! Nous vous contacterons dans les 24 heures.'); return false;">
-            <h4 style="margin-top:1.5rem;">Vos coordonnees</h4>
-            <div class="form-group">
-              <label class="form-label">Nom complet <span class="required">*</span></label>
-              <input type="text" class="form-input" required placeholder="Votre nom">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Courriel <span class="required">*</span></label>
-              <input type="email" class="form-input" required placeholder="votre@courriel.com">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Telephone</label>
-              <input type="tel" class="form-input" placeholder="(514) 000-0000">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Ville / region <span class="required">*</span></label>
-              <input type="text" class="form-input" required placeholder="Montreal, Laval, Quebec...">
-            </div>
-
-            <h4 style="margin-top:2rem;">La garde-robe</h4>
-            <div class="form-group">
-              <label class="form-label">Votre lien avec la personne decedee</label>
-              <select class="form-select">
-                <option value="">Choisir...</option>
-                <option>Enfant</option>
-                <option>Conjoint(e)</option>
-                <option>Ami(e)</option>
-                <option>Liquidateur</option>
-                <option>Autre</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Volume approximatif</label>
-              <select class="form-select">
-                <option value="">Choisir...</option>
-                <option>Un placard / une commode</option>
-                <option>Plusieurs placards / une chambre complete</option>
-                <option>Plusieurs pieces / maison entiere</option>
-                <option>Je ne sais pas</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Types de vetements presents</label>
-              <div class="form-check"><input type="checkbox"><label>Vetements de tous les jours</label></div>
-              <div class="form-check"><input type="checkbox"><label>Vetements de marque / designer</label></div>
-              <div class="form-check"><input type="checkbox"><label>Vintage (avant 2000)</label></div>
-              <div class="form-check"><input type="checkbox"><label>Fourrures / cuirs</label></div>
-              <div class="form-check"><input type="checkbox"><label>Accessoires (sacs, foulards, chapeaux, bijoux de mode)</label></div>
-            </div>
-
-            <h4 style="margin-top:2rem;">Vos preferences</h4>
-            <div class="form-group">
-              <label class="form-label">Que souhaitez-vous pour ces vetements?</label>
-              <div class="form-check"><input type="radio" name="preference"><label>Maximiser les revenus (consignation prioritaire)</label></div>
-              <div class="form-check"><input type="radio" name="preference"><label>Maximiser les dons (recu fiscal)</label></div>
-              <div class="form-check"><input type="radio" name="preference"><label>Un mix des deux — vous me conseillez</label></div>
-              <div class="form-check"><input type="radio" name="preference"><label>Je ne sais pas encore</label></div>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Y a-t-il un delai a respecter?</label>
-              <input type="text" class="form-input" placeholder="Ex: vente de maison en mars, fin de bail...">
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Commentaires / questions</label>
-              <textarea class="form-textarea" placeholder="Parlez-nous de votre situation dans vos mots."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer ma demande &rarr;</button>
-            <p class="form-hint" style="text-align:center;margin-top:.75rem;">Nous repondons dans les 24 heures, du lundi au vendredi.</p>
-          </form>
-        </div>
-
-        <!-- Sidebar -->
-        <div>
-          <div class="card" style="margin-bottom:2rem;">
-            <h3>Vous preferez nous parler directement?</h3>
-            <hr class="sep">
-            <div class="value-item"><strong>Telephone</strong><span>Appelez-nous du lundi au vendredi, 9h a 17h.</span></div>
-            <div class="value-item"><strong>Courriel</strong><span>info@heritagevestiaire.com</span></div>
-          </div>
-
-          <div class="card" style="margin-bottom:2rem;">
-            <h3>Apres votre demande</h3>
-            <hr class="sep">
-            <ol style="margin:1rem 0 0 1.25rem;color:#6B6560;">
-              <li style="margin-bottom:.5rem;"><strong>Reponse en 24h</strong> — On vous contacte par courriel ou telephone</li>
-              <li style="margin-bottom:.5rem;"><strong>Estimation</strong> — Par photos ou visite a domicile</li>
-              <li style="margin-bottom:.5rem;"><strong>Plan sur mesure</strong> — Nos recommandations detaillees</li>
-              <li style="margin-bottom:.5rem;"><strong>Vous decidez</strong> — Aucune obligation</li>
-            </ol>
-          </div>
-
-          <div class="card" style="margin-bottom:2rem;">
-            <h3>Vous etes professionnel?</h3>
-            <hr class="sep">
-            <p class="text-secondary">Notaires, liquidateurs, gestionnaires immobiliers — nous offrons un service adapte aux professionnels :</p>
-            <ul class="styled-list">
-              <li>Delais prioritaires pour les ventes immobilieres</li>
-              <li>Rapports detailles compatibles avec la reddition de comptes</li>
-              <li>Tarifs partenaires pour les collaborations regulieres</li>
-              <li>Referencement mutuel</li>
-            </ul>
-            <p><strong>pro@heritagevestiaire.com</strong></p>
-          </div>
-
-          <div class="card" style="margin-bottom:2rem;">
-            <h3>Zone de service</h3>
-            <hr class="sep">
-            <div class="zone-pills" style="justify-content:flex-start;">
-              <span class="zone-pill">Montreal</span>
-              <span class="zone-pill">Laval</span>
-              <span class="zone-pill">Longueuil</span>
-              <span class="zone-pill">Brossard</span>
-              <span class="zone-pill">Rive-Sud</span>
-              <span class="zone-pill">Rive-Nord</span>
-              <span class="zone-pill">Quebec</span>
-              <span class="zone-pill">Levis</span>
-              <span class="zone-pill">Gatineau</span>
-              <span class="zone-pill">Sherbrooke</span>
-              <span class="zone-pill">Trois-Rivieres</span>
-            </div>
-            <p class="form-hint">Regions eloignees : contactez-nous, on offre aussi un service d'envoi par la poste.</p>
-          </div>
-
-          <div class="card">
-            <h3>Engagement confidentialite</h3>
-            <hr class="sep">
-            <p class="text-secondary">Les informations que vous nous transmettez sont strictement confidentielles. Nous ne partageons rien avec des tiers. Vos coordonnees ne sont utilisees que pour traiter votre demande. Point final.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><div class="logo">Heritage <span>Vestiaire</span></div><p>Service specialise dans la gestion respectueuse des garde-robes de succession au Quebec.</p></div>
-        <div><h4>Services</h4><ul class="footer-links"><li><a href="/services.html">Consignation</a></li><li><a href="/services.html">Don avec recu fiscal</a></li><li><a href="/services.html">Recyclage textile</a></li><li><a href="/comment-ca-marche.html">Comment ca marche</a></li></ul></div>
-        <div><h4>Ressources</h4><ul class="footer-links"><li><a href="/blog/">Blog</a></li><li><a href="/faq.html">FAQ</a></li><li><a href="/a-propos.html">A propos</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-        <div><h4>Contact</h4><ul class="footer-links"><li>info@heritagevestiaire.com</li><li>Montreal, Quebec, Canada</li></ul></div>
-      </div>
-      <div class="footer-bottom"><span>&copy; 2026 Heritage Vestiaire. Tous droits reserves.</span><span><a href="/contact.html">Mentions legales</a></span></div>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
